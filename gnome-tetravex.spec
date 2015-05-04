@@ -1,8 +1,8 @@
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
 
 Name:		gnome-tetravex
-Version:	3.14.0
-Release:	%mkrel 3
+Version:	3.16.0
+Release:	1
 Summary:	GNOME Tetravex game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
@@ -26,13 +26,13 @@ by six grid.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --with-help
+%find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %license COPYING
