@@ -41,7 +41,7 @@ by six grid.
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/glib-2.0/schemas/org.gnome.tetravex.gschema.xml
-%{_iconsdir}/*/*/apps/%{name}.*
+%{_iconsdir}/*/*/apps/%{name}*.*
 %{_mandir}/man6/%{name}.6*
 %{_datadir}/appdata/%{name}.appdata.xml
 
