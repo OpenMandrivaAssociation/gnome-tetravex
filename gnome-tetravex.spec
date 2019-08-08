@@ -3,7 +3,7 @@
 %define debug_package %{nil}
 
 Name:		gnome-tetravex
-Version:	3.22.0
+Version:	3.32.0
 Release:	1
 Summary:	GNOME Tetravex game
 License:	GPLv2+ and CC-BY-SA
@@ -12,7 +12,7 @@ URL:		https://wiki.gnome.org/Tetravex
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
-BuildRequires:	intltool
+BuildRequires:	meson
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
 Obsoletes:	gnotravex
@@ -28,21 +28,21 @@ by six grid.
 %setup -q
 
 %build
-%configure CFLAGS='-Wno-error'
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
 %doc COPYING
 %{_bindir}/%{name}
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/glib-2.0/schemas/org.gnome.tetravex.gschema.xml
-%{_iconsdir}/*/*/apps/%{name}*.*
 %{_mandir}/man6/%{name}.6*
-%{_datadir}/appdata/%{name}.appdata.xml
+%{_datadir}/glib-2.0/schemas/org.gnome.Tetravex.gschema.xml
+%{_datadir}/icons/hicolor/*/apps/*
+%{_datadir}/metainfo/*.appdata.xml
+%{_datadir}/applications/org.gnome.Tetravex.desktop
 
 

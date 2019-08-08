@@ -1,6 +1,2 @@
-removed_sources:
-  gnome-tetravex-3.14.0.tar.xz: 209af1616dfcf1a14be61fc7b13fbca57d54cb59
-  gnome-tetravex-3.16.0.tar.xz: 46a523a4b1a54d01e07e350abc5c0666a64148e1
-  gnome-tetravex-3.18.0.tar.xz: cbdfc4bcaefed51407c2dc15136a19c5c1553b51
 sources:
-  gnome-tetravex-3.22.0.tar.xz: b5c37fad328cf5ee00374c732cfe7701c3395829
+  gnome-tetravex-3.32.0.tar.xz: cd8e6c29c9b883b67a9e44f3a0eeae2910119693
