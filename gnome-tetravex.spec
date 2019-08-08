@@ -14,6 +14,7 @@ BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:	meson
 BuildRequires:	itstool
+BuildRequires:	vala-devel
 BuildRequires:	libxml2-utils
 Obsoletes:	gnotravex
 # For help
