@@ -45,5 +45,5 @@ by six grid.
 %{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/metainfo/*.appdata.xml
 %{_datadir}/applications/org.gnome.Tetravex.desktop
-
-
+%{_datadir}/dbus-1/services/org.gnome.Tetravex.service
+%{_datadir}/locale/*/LC_MESSAGES/gnome-tetravex-gui.mo
