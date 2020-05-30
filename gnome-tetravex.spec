@@ -3,7 +3,7 @@
 %define debug_package %{nil}
 
 Name:		gnome-tetravex
-Version:	3.36.2
+Version:	3.36.3
 Release:	1
 Summary:	GNOME Tetravex game
 License:	GPLv2+ and CC-BY-SA
