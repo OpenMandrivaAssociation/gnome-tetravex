@@ -1,10 +1,9 @@
 %define _disable_rebuild_configure 1
 %define url_ver	%(echo %{version}|cut -d. -f1,2)
-%define debug_package %{nil}
 
 Name:		gnome-tetravex
 Version:	3.38.2
-Release:	2
+Release:	3
 Summary:	GNOME Tetravex game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
