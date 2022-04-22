@@ -9,6 +9,8 @@ License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
 URL:		https://wiki.gnome.org/Tetravex
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+# Merge request (not merged yet) to fix compilation with meson 0.60+
+Patch0:   https://gitlab.gnome.org/GNOME/gnome-tetravex/-/merge_requests/20.patch
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.4.0
 BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:	meson
@@ -25,7 +27,7 @@ level ranges from the simple two by two up to the seriously mind-bending six
 by six grid.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
