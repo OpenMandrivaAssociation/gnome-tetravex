@@ -3,7 +3,7 @@
 
 Name:		gnome-tetravex
 Version:	3.38.2
-Release:	5
+Release:	6
 Summary:	GNOME Tetravex game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
