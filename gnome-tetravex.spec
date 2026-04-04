@@ -3,7 +3,7 @@
 
 Name:		gnome-tetravex
 Version:	3.38.3
-Release:	1
+Release:	2
 Summary:	GNOME Tetravex game
 License:	GPLv2+ and CC-BY-SA
 Group:		Games/Puzzles
@@ -15,7 +15,7 @@ BuildRequires:	pkgconfig(librsvg-2.0) >= 2.32.0
 BuildRequires:	meson
 BuildRequires:	itstool
 BuildRequires:	vala-devel
-BuildRequires:	libxml2-utils
+BuildRequires:	libxml2-utils >= 2.15.2
 Obsoletes:	gnotravex
 # For help
 Requires:	yelp
